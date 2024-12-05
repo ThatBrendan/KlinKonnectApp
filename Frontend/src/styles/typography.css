@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'nexa_light';
+  src: url('../fonts/nexa_light-webfont.eot');
+  src:
+    url('../fonts/nexa_light-webfont.eot') format('embedded-opentype'),
+    url('../fonts/nexa_light-webfont.svg#nexa_light') format('svg'),
+    url('../fonts/nexa_light-webfont.woff') format('woff'),
+    url('../fonts/nexa_light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa_bold';
+  src: url('../fonts/nexa_bold-webfont.eot');
+  src:
+    url('../fonts/nexa_bold-webfont.eot') format('embedded-opentype'),
+    url('../fonts/nexa_bold-webfont.svg#nexa_bold') format('svg'),
+    url('../fonts/nexa_bold-webfont.woff') format('woff'),
+    url('../fonts/nexa_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito_Sans';
+  src: url('../fonts/NunitoSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito_Sans_Bold';
+  src: url('../fonts/NunitoSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --body-font: 'Nunito_Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --bold-font: 'nexa_bold';
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.4rem;
+}
+* {
+  letter-spacing: 0px !important;
+  font-synthesis: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.subtitle {
+  font-family: var(--bold-font);
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+h2,
+.h2 {
+  font-size: 3.75rem;
+}
+
+h2 + .subtitle,
+.h2 + .subtitle {
+  font-size: 1.875rem;
+}
+
+h2 + .subtitle,
+h2 + .subtitle + *,
+h2 + .subtitle-spacing,
+.h2 + .subtitle,
+.h2 + .subtitle + *,
+.h2 + .subtitle-spacing {
+  margin-top: 42px;
+}
+
+h3,
+.h3 {
+  font-size: 3.125rem;
+  margin-bottom: 35px;
+}
+
+h4,
+.h4 {
+  font-size: 2.5rem;
+}
+
+h4 + .subtitle,
+.h4 + .subtitle {
+  font-size: 1.25rem;
+}
+
+h4 + .subtitle,
+h4 + .subtitle + *,
+h4 + .subtitle-spacing,
+h4 + .subtitle-spacing + *,
+.h4 + .subtitle,
+.h4 + .subtitle + *,
+.h4 + .subtitle-spacing,
+.h4 + .subtitle-spacing + * {
+  margin-top: 28px;
+}
+
+h5,
+.h5 {
+  font-size: 1.875rem;
+  margin-bottom: 23px;
+}
+
+h5 + .subtitle,
+.h5 + .subtitle {
+  font-size: 1.125rem;
+}
+
+h5 + .subtitle,
+h5 + .subtitle + *,
+.h5 + .subtitle,
+.h5 + .subtitle + * {
+  margin-top: 23px;
+}
+
+h6,
+.h6 {
+  font-size: 1.625rem;
+  margin-bottom: 19px;
+}
+
+button,
+.v-btn {
+  font-family: var(--bold-font) !important;
+  font-size: 1rem;
+  text-transform: capitalize !important;
+}
+
+.boldFont {
+  font-family: var(--bold-font);
+}
+
+.large {
+  font-size: 1.25rem;
+}
+
+small,
+.small {
+  font-size: 0.75rem !important;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.blue-text {
+  color: var(--blue);
+}
+.yellow-text {
+  color: var(--yellow);
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.black-text {
+  color: var(--black);
+}
+.red-text {
+  color: var(--red);
+}
+.purple-text {
+  color: var(--purple);
+}
+.grey-text {
+  color: var(--grey);
+}
+.green-text {
+  color: var(--green);
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+strong,
+b {
+  font-family: var(--bold-font);
+}
